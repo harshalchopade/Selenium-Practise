@@ -1,0 +1,5 @@
+WinActivate("Authentication Required")
+Send("validuname")
+Send("{TAB}")
+Send("validpwd")
+Send("{ENTER}")

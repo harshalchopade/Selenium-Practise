@@ -1,0 +1,143 @@
+[1618201874.911][INFO]: Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 19545
+[1618201874.912][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1618201875.572][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1618201875.577][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1618201875.579][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1618201875.582][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\hchopade\AppData\Local\Temp\scoped_dir13836_780801743" data:,
+[1618201876.111][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+[1618201876.118][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1618201876.125][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "89.0.4389.114",
+      "chrome": {
+         "chromedriverVersion": "88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784})",
+         "userDataDir": "C:\\Users\\hchopade\\AppData\\Local\\Temp\\scoped_dir13836_780801743"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:53835"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "4347d5a32ebfef01e67279f3ec3485c5"
+}
+[1618201876.172][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] COMMAND MaximizeWindow {
+
+}
+[1618201876.172][INFO]: Waiting for pending navigations...
+[1618201876.174][INFO]: Done waiting for pending navigations. Status: ok
+[1618201876.175][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1618201876.283][INFO]: Waiting for pending navigations...
+[1618201876.284][INFO]: Done waiting for pending navigations. Status: ok
+[1618201876.284][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] RESPONSE MaximizeWindow {
+   "height": 840,
+   "width": 1552,
+   "x": -8,
+   "y": -8
+}
+[1618201876.298][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] COMMAND Navigate {
+   "url": "http://www.learn-automation.com"
+}
+[1618201876.298][INFO]: Waiting for pending navigations...
+[1618201876.299][INFO]: Done waiting for pending navigations. Status: ok
+[1618201879.926][INFO]: Waiting for pending navigations...
+[1618201883.914][INFO]: Done waiting for pending navigations. Status: ok
+[1618201883.914][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] RESPONSE Navigate
+[1618201883.926][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] COMMAND Quit {
+
+}
+[1618201884.034][INFO]: [4347d5a32ebfef01e67279f3ec3485c5] RESPONSE Quit

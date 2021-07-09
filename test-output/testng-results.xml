@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="455837" started-at="2021-07-07T21:54:37 IST" finished-at="2021-07-07T22:02:13 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="455837" started-at="2021-07-07T21:54:37 IST" finished-at="2021-07-07T22:02:13 IST">
+      <class name="datadriventesting.DataDrivenTest">
+        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="26036" started-at="2021-07-07T22:01:19 IST" data-provider="Credentials" finished-at="2021-07-07T22:01:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin137]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSetOfTestData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2021-07-07T22:01:45 IST" finished-at="2021-07-07T22:01:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="14805" started-at="2021-07-07T22:01:45 IST" data-provider="Credentials" finished-at="2021-07-07T22:02:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSetOfTestData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-07-07T22:02:00 IST" finished-at="2021-07-07T22:02:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="13325" started-at="2021-07-07T22:02:00 IST" data-provider="Credentials" finished-at="2021-07-07T22:02:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSetOfTestData -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-07-07T22:02:13 IST" finished-at="2021-07-07T22:02:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- datadriventesting.DataDrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
