@@ -30,6 +30,7 @@ public class multipleWindowHandling {
 		Set<String> all_windows = driver.getWindowHandles();
 		System.out.println("Windows count are "+ all_windows.size());
 		
+		//When multiple windows needs to be handled
 		List<String> tabs = new ArrayList<>(all_windows);
 		driver.switchTo().window(tabs.get(2));
 		driver.findElement(By.name("q")).sendKeys("Selenium");

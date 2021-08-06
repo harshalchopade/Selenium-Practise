@@ -13,8 +13,8 @@ import com.paulhammant.ngwebdriver.NgWebDriver;
 public class AutomateAngularAppConcept {
 	/*
 	 * We can use selenium webdriver to automate Angular app with help third party API/lib
-	 * call ngWebDriver developed by paul.
-	 * Angular JS based app used for SPA where data is very dynamic, htm content is dynamic and it it
+	 * called ngWebDriver developed by paul.
+	 * Angular JS based app used for SPA where data is very dynamic, html content is dynamic and it it
 	 * used with angular framwork.
 	 * Angular is a javascript framework provided by google.
 	 * 

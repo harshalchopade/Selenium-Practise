@@ -1,73 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="455837" started-at="2021-07-07T21:54:37 IST" finished-at="2021-07-07T22:02:13 IST">
+  <suite name="Default suite" duration-ms="32" started-at="2021-08-04T09:56:12 IST" finished-at="2021-08-04T09:56:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="455837" started-at="2021-07-07T21:54:37 IST" finished-at="2021-07-07T22:02:13 IST">
-      <class name="datadriventesting.DataDrivenTest">
-        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="26036" started-at="2021-07-07T22:01:19 IST" data-provider="Credentials" finished-at="2021-07-07T22:01:45 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin137]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="32" started-at="2021-08-04T09:56:12 IST" finished-at="2021-08-04T09:56:12 IST">
+      <class name="crossbrowser.CrossBrowserTest">
+        <test-method status="FAIL" signature="testBrowser(java.lang.String)[pri:0, instance:crossbrowser.CrossBrowserTest@76b10754]" name="testBrowser" duration-ms="0" started-at="2021-08-04T09:56:12 IST" finished-at="2021-08-04T09:56:12 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method testBrowser but has not been marked @Optional or defined
+in C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-415866099\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method testBrowser but has not been marked @Optional or defined
+in C:\Users\hchopade\AppData\Local\Temp\testng-eclipse-415866099\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithSetOfTestData -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2021-07-07T22:01:45 IST" finished-at="2021-07-07T22:01:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="14805" started-at="2021-07-07T22:01:45 IST" data-provider="Credentials" finished-at="2021-07-07T22:02:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithSetOfTestData -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-07-07T22:02:00 IST" finished-at="2021-07-07T22:02:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="loginWithSetOfTestData(java.lang.String, java.lang.String)[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="loginWithSetOfTestData" duration-ms="13325" started-at="2021-07-07T22:02:00 IST" data-provider="Credentials" finished-at="2021-07-07T22:02:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Admin789]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithSetOfTestData -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:datadriventesting.DataDrivenTest@2e222612]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-07-07T22:02:13 IST" finished-at="2021-07-07T22:02:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- datadriventesting.DataDrivenTest -->
+        </test-method> <!-- testBrowser -->
+      </class> <!-- crossbrowser.CrossBrowserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,7 +31,5 @@ public class CalendarHandlingUsingJS {
 		selectDateByJS(driver, driver.findElement(By.id("datepicker")), "06/26/2021");
 		
 		driver.quit();
-
 	}
-
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 /*
- * ChromeOptions is seperate in selenium which will help to manage options specific options
+ * ChromeOptions is seperate class in selenium which will help to manage options specific options
  * specific to ChromeDriver.
  * ChromeOptions is a class extends MutuableCapabilites.
  * It added after selenium 3.6.0
@@ -31,7 +31,7 @@ import org.testng.annotations.Test;
  * options.setAcceptInsecureCerts(true);
  * 
  * To disbale infobar
- * options.addArguments("disbale-infobars");
+ * options.addArguments("disable-infobars");
  * 
  * https://peter.sh/experiments/chromium-command-line-switches/
  * */

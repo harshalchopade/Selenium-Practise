@@ -27,6 +27,5 @@ public class ImplicitWaitConcept {
 			// Start application
 			driver.get("http://seleniumpractise.blogspot.in/2016/08/how-to-use-explicit-wait-in-selenium.html");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			
 }
 }

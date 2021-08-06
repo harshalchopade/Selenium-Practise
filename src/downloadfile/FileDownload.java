@@ -1,6 +1,7 @@
 package downloadfile;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.UUID;
 
 import org.apache.commons.collections4.map.HashedMap;
@@ -26,7 +27,7 @@ public class FileDownload {
 		
 		ChromeOptions options = new ChromeOptions();
 		
-		HashedMap<String, Object> pref = new HashedMap<String, Object>();
+		HashMap<String, Object> pref = new HashMap<String, Object>();
 		pref.put("profile.default_content_settings.popups", 0);
 		pref.put("download.default_directory", folder.getAbsolutePath());
 		options.setExperimentalOption("pref", pref);

@@ -20,7 +20,8 @@ public class LaunchBrowser {
 		
 		  //Code for launching the Chrome browser
 		  System.setProperty("webdriver.chrome.driver","D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
-		  WebDriver driver = new ChromeDriver(); driver.manage().window().maximize();
+		  WebDriver driver = new ChromeDriver();
+		  driver.manage().window().maximize();
 		  driver.get("https://demoqa.com/select-menu"); 
 		  String pageTitle = driver.getTitle(); 
 		  System.out.println(pageTitle);
@@ -59,8 +60,6 @@ public class LaunchBrowser {
 		 * Alt + –>  - to go back to previous
 		 * Ctrl + Shift + / - to collapse the code
 		 * Ctrl + Shift + * - to expand the code
-		 * */
-		
+		 * */	
 	}
-
 }

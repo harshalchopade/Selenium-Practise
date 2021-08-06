@@ -92,7 +92,7 @@ public class FileHandlingUsingAutoIT {
 	 * There are multiple ways to upload files in Selenium Webdriver
 	 * 
 	 * You can directly use the sendKeys(“File path”) method but sometimes this
-	 * method does not work. If the file uploader does not include an input tag. We
+	 * method does not work. If the file uploader does not include an type='file' tag. We
 	 * can use the Robot class to upload files in Selenium, which we will discuss
 	 * today. You can also take the help of Sikuli or a Robot class.
 	 */

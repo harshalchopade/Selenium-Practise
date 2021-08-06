@@ -24,7 +24,7 @@ public class HandlingBootstrapDropdown {
 		//Steps
 		/*1.Click on the dropdown
 		 *2.Locate the options
-		 * then perfrom the operation
+		 * then perform the operation
 		 * 
 		 * Note
 		 * In bootstrap tech, select class we are not going to use to perform the operation

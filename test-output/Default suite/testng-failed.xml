@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="singleton.TestConcept">
+      <class name="crossbrowser.CrossBrowserTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="getGoogleTitle"/>
+          <include name="testBrowser"/>
         </methods>
-      </class> <!-- singleton.TestConcept -->
+      </class> <!-- crossbrowser.CrossBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

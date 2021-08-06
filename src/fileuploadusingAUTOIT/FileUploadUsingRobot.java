@@ -14,10 +14,10 @@ public class FileUploadUsingRobot {
 	@Test
 	public void Fileupload() throws AWTException, InterruptedException {
 
-// Start browser
+		// Start browser
 		WebDriver driver = new FirefoxDriver();
 
-// maximize browser
+		// maximize browser
 		driver.manage().window().maximize();
 
 		// Specify the file location with extension
@@ -27,7 +27,7 @@ public class FileUploadUsingRobot {
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
 		System.out.println("selection" + sel);
 
-// Open Monster.com
+		// Open Monster.com
 		driver.get("http://my.monsterindia.com/create_account.html");
 		Thread.sleep(2000);
 
@@ -35,10 +35,10 @@ public class FileUploadUsingRobot {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scroll(0,350)");
 
-// Wait for 5 seconds
+		// Wait for 5 seconds
 		Thread.sleep(5000);
 
-// This will click on Browse button
+		// This will click on Browse button
 		driver.findElement(By.id("wordresume")).click();
 
 		System.out.println("Browse button clicked");
@@ -50,14 +50,14 @@ public class FileUploadUsingRobot {
 		// Press Enter
 		robot.keyPress(KeyEvent.VK_ENTER);
 
-// Release Enter
+		// Release Enter
 		robot.keyRelease(KeyEvent.VK_ENTER);
 
 		// Press CTRL+V
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 
-// Release CTRL+V
+		// Release CTRL+V
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyRelease(KeyEvent.VK_V);
 		Thread.sleep(1000);
@@ -67,5 +67,4 @@ public class FileUploadUsingRobot {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 
 	}
-
 }

@@ -15,7 +15,7 @@ public class CrossBrowserTest {
 	WebDriver driver;
 
 	@Test
-	@Parameters("browser")
+	@Parameters({"browser"})
 	public void testBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("Chrome"))
 		{
