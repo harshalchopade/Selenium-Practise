@@ -3,6 +3,7 @@ package brokenlinks;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -50,11 +51,16 @@ public class VerifyBrokenLinksExample {
 		driver.get("https://www.google.com/webhp?client=firefox-b-d&safe=active");
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
+		List<String> urls = new ArrayList<String>();
 
 		for (WebElement eachLink : links) {
 			String link = eachLink.getAttribute("href");
+			urls.add(link);
 			verifyLink(link);
 		}
+		
+		//to improve the performance of script
+		urls.parallelStream().forEach(e->verifyLink(e));
 		driver.quit();
 	}
 }
