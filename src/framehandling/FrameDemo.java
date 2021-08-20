@@ -37,7 +37,7 @@ public class FrameDemo {
 	 * using 3 ways.
 	 * 
 	 * By Index
-	 *  By Name or Id 
+	 *  By Name 
 	 *  By Web Element
 	 */
 

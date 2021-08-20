@@ -84,7 +84,4 @@ public class AutomateAngularAppConcept {
 		System.out.println(out);
 		driver.quit();
 	}
-	
-	
-
 }

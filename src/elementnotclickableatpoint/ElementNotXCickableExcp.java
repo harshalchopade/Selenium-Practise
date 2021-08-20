@@ -62,7 +62,6 @@ public class ElementNotXCickableExcp {
 		driver.findElement(By.xpath("//span[text()='Radio Button']")).click();
 		action.moveToElement(driver.findElement(By.id("yesRadio"))).click().build().perform();
 		Thread.sleep(10000);
-		driver.quit();
-		
+		driver.quit();	
 	}
 }

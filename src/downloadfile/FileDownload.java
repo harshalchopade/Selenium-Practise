@@ -17,19 +17,19 @@ import org.testng.annotations.Test;
 
 public class FileDownload {
 	WebDriver driver;
-	File folder;
+	File file;
 	
 	@BeforeMethod
 	public void setUp()
 	{
-		folder = new File(UUID.randomUUID().toString());
-		folder.mkdir();
+		file = new File(UUID.randomUUID().toString());
+		file.mkdir();
 		
 		ChromeOptions options = new ChromeOptions();
 		
 		HashMap<String, Object> pref = new HashMap<String, Object>();
 		pref.put("profile.default_content_settings.popups", 0);
-		pref.put("download.default_directory", folder.getAbsolutePath());
+		pref.put("download.default_directory", file.getAbsolutePath());
 		options.setExperimentalOption("pref", pref);
 		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -53,7 +53,7 @@ public class FileDownload {
 	public void testDownload()
 	{
 		driver.findElement(By.partialLinkText("Download")).click();
-		File list[] = folder.listFiles();
+		File list[] = file.listFiles();
 		
 		Assert.assertTrue(list.length>0);
 	}
@@ -62,10 +62,10 @@ public class FileDownload {
 	public void tearDown()
 	{
 		driver.quit();
-		for(File file : folder.listFiles())
+		for(File file : file.listFiles())
 		{
 			file.delete();
 		}
-		folder.delete();
+		file.delete();
 	}
 }

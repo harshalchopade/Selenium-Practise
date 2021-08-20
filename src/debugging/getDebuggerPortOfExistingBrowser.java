@@ -12,10 +12,10 @@ public class getDebuggerPortOfExistingBrowser
 
 /*
  * When we already have chrome browser running and we want to run test cases on
- * the exisitng browser.
+ * the existing browser.
  * 
  * Why it is reqd? 1.If we are running test cases it having 100 steps on 98th
- * its failing so if we dont use this approach then we fix the test case and run
+ * its failing so if we don't use this approach then we fix the test case and run
  * the whole test case again.
  * 
  * 2.We need to try the new methods on function or locator on the active session

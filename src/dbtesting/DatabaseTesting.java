@@ -57,17 +57,13 @@ public class DatabaseTesting {
 
 		// This will create statement
 		Statement smt = con.createStatement();
-
 		System.out.println("Statement created");
 
 		// Now execute the query, here facebook is the table which I have created in DB
-
 		ResultSet rs = smt.executeQuery("Select * from Facebook");
-
 		System.out.println("Query Executed");
 
 		// Iterate the resultset now
-
 		while (rs.next()) {
 
 			String uname = rs.getString("username");
@@ -78,5 +74,4 @@ public class DatabaseTesting {
 
 		}
 	}
-
 }

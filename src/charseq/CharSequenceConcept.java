@@ -12,8 +12,10 @@ public class CharSequenceConcept {
 public static void main(String[] args) {
 	
 	 //Code for launching the Chrome browser
-	  System.setProperty("webdriver.chrome.driver","D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
-	  WebDriver driver = new ChromeDriver(); driver.manage().window().maximize();
+	  System.setProperty("webdriver.chrome.driver",
+			  "D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
+	  WebDriver driver = new ChromeDriver(); 
+	  driver.manage().window().maximize();
 	  driver.get("https://demoqa.com/select-menu"); 
 	  WebElement uname = driver.findElement(By.id("userName"));
 	  

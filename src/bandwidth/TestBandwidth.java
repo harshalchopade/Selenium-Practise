@@ -20,7 +20,7 @@ public class TestBandwidth {
 		public Object[][] networkConditions() {
 			return new Object[][] { { 5000, 5000 }, { 10000, 7000 }, { 15000, 9000 }, { 20000, 10000 },
 					{ 23000, 11000 }, { 30000, 15000 }, { 40000, 20000 }, { 50000, 20000 }, { 75000, 20000 },
-					{ 100000, 20000 }, { 0, 0 }, };
+					{ 100000, 20000 }, { 0, 0 } };
 		}
 
 		@Test(dataProvider = "networkBandwidths")
