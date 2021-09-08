@@ -40,7 +40,4 @@ public class HashMapConceptInRealTime {
 		driver.findElement(By.id("username")).sendKeys(getUserID("user1"));
 		driver.findElement(By.id("password")).sendKeys(getUserID("user1"));
 	}
-	
-	
-
 }

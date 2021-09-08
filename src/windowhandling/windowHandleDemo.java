@@ -38,26 +38,25 @@ public class windowHandleDemo {
 		driver.manage().window().maximize();
 		driver.get("http://seleniumpractise.blogspot.com/2017/07/multiple-window-examples.html");
 		String parent = driver.getWindowHandle();
-		
-		System.out.println("Parent Window id is "+parent);
+
+		System.out.println("Parent Window id is " + parent);
 		driver.findElement(By.xpath("//a[@href='http://www.google.com']")).click();
-		
+
 		Set<String> all_windows = driver.getWindowHandles();
 		int count = all_windows.size();
-		
-		for(String child:all_windows)
-		{
-			if(!parent.equalsIgnoreCase(child))
-			{
+
+		for (String child : all_windows) {
+			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-				driver.findElement(By.name("q")).sendKeys("Selenium Webdriver");;
+				driver.findElement(By.name("q")).sendKeys("Selenium Webdriver");
+				;
 				driver.close();
 			}
 		}
-		
+
 		driver.switchTo().window(parent);
-		System.out.println("Parent Window title is "+driver.getTitle());
+		System.out.println("Parent Window title is " + driver.getTitle());
 		driver.quit();
-		
+
 	}
 }

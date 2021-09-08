@@ -82,7 +82,7 @@ public class ExplicitWaitDemo {
 
 		// Here we will wait until element is not visible, if element is visible then it
 		// will return web element
-		// or else it will throw exception
+		// or else it will throw exception org.openqa.selenium.TimeoutException
 		WebElement element = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='WebDriver']")));
 
@@ -97,5 +97,4 @@ public class ExplicitWaitDemo {
 			System.out.println("===== WebDriver is not visible======");
 		}
 	}
-
 }

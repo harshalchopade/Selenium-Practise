@@ -19,7 +19,7 @@ public class PageLoadTimeout {
 	 * 
 	 * This timeout is applicable only to driver.manage() and driver.navigate.to()
 	 * methods.
-	 * In the below above, if your page does not load within 15 seconds, TimeoutException will be thrown.
+	 * In the below code, if your page does not load within 5 seconds, TimeoutException will be thrown.
 	 */
 
 	@Test(priority = 1)

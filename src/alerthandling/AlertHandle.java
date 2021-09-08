@@ -92,8 +92,7 @@ public class AlertHandle {
 		driver.switchTo().alert().sendKeys("Harshal");
 		Thread.sleep(5000);
 		driver.switchTo().alert().accept();
-		driver.quit();
-		
+		driver.quit();	
 	}
 	
 	//Confirmation Alert.

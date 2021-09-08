@@ -50,7 +50,8 @@ public class VerifyBrokenLinksExample {
 		// Start application
 		driver.get("https://www.google.com/webhp?client=firefox-b-d&safe=active");
 
-		List<WebElement> links = driver.findElements(By.tagName("a"));
+		List<WebElement> links = driver.findElements(By.tagName("h"));
+		driver.findElements(By.tagName("h")).get(0).click();
 		List<String> urls = new ArrayList<String>();
 
 		for (WebElement eachLink : links) {

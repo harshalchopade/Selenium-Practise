@@ -18,11 +18,11 @@ public class SeleniumGrid {
 		cap.setPlatform(Platform.WINDOWS);
 
 		URL url = new URL("http://localhost:4444/wd/hub");
-		
+
 		// Code for launching the Chrome browser
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
-		
+
 		ChromeOptions options = new ChromeOptions();
 		options.merge(cap);
 		WebDriver driver = new RemoteWebDriver(url, options);
@@ -30,9 +30,7 @@ public class SeleniumGrid {
 		driver.get("https://www.google.com");
 
 		System.out.println("Title is " + driver.getTitle());
-
 		driver.quit();
 
 	}
-
 }
