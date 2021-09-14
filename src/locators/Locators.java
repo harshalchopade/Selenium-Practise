@@ -86,7 +86,5 @@ public class Locators {
 		  //driver.findElement(new ByChained(parent1, child1, child2).sendKeys("test");
 		  
 		  driver.quit();
-		
 	}
-
 }

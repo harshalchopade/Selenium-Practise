@@ -71,7 +71,6 @@ public class DatabaseTesting {
 			String email = rs.getString("email");
 
 			System.out.println("Uname is " + uname + " password is " + pass + " email id is " + email);
-
 		}
 	}
 }

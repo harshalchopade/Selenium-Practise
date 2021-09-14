@@ -50,8 +50,7 @@ public class VerifyBrokenLinksExample {
 		// Start application
 		driver.get("https://www.google.com/webhp?client=firefox-b-d&safe=active");
 
-		List<WebElement> links = driver.findElements(By.tagName("h"));
-		driver.findElements(By.tagName("h")).get(0).click();
+		List<WebElement> links = driver.findElements(By.tagName("a"));
 		List<String> urls = new ArrayList<String>();
 
 		for (WebElement eachLink : links) {
@@ -59,9 +58,9 @@ public class VerifyBrokenLinksExample {
 			urls.add(link);
 			verifyLink(link);
 		}
-		
-		//to improve the performance of script
-		urls.parallelStream().forEach(e->verifyLink(e));
+
+		// to improve the performance of script
+		urls.parallelStream().forEach(e -> verifyLink(e));
 		driver.quit();
 	}
 }

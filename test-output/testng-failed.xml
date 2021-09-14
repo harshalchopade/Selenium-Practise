@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="brokenlinks.VerifyBrokenLinksExample">
+      <class name="graphAutomation.ComplexSVGUiElements">
         <methods>
-          <include name="brokenLinksExample"/>
+          <include name="testBrowser"/>
         </methods>
-      </class> <!-- brokenlinks.VerifyBrokenLinksExample -->
+      </class> <!-- graphAutomation.ComplexSVGUiElements -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

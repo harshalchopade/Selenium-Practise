@@ -79,5 +79,4 @@ public class DynamicXPath {
 		   
 		 * E.g //div[contains(text(),'But After')] VS //div[contains(.,'But After')] */
 	}
-
 }

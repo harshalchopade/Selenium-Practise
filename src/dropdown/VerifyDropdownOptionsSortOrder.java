@@ -80,5 +80,4 @@ public class VerifyDropdownOptionsSortOrder {
 
 		driver.quit();
 	}
-
 }

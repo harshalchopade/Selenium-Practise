@@ -16,40 +16,36 @@ import org.testng.annotations.BeforeClass;
  * Reuse code as much we can.
  * */
 public class BaseClass {
-	
+
 	WebDriver driver;
 	Properties pro;
-	
+
 	@BeforeClass
-	public void setUp()
-	{
+	public void setUp() {
 		Reporter.log("Browser Session Started", true);
 
 		try {
 			File file = new File("./resources/Config.property");
 			FileInputStream fis = new FileInputStream(file);
-			
+
 			pro = new Properties();
 			pro.load(fis);
-		} catch (Exception e) 
-		{
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 		System.setProperty("webdriver.chrome.driver", pro.getProperty("ChromeDriver"));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(pro.getProperty("URL"));
-		
+
 		Reporter.log("URL Opened", true);
 
 	}
-	
+
 	@AfterClass
-	public void closeBrowser()
-	{
+	public void closeBrowser() {
 		driver.quit();
 		Reporter.log("Session Ended", true);
 	}
-
 }

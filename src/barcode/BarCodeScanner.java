@@ -13,7 +13,7 @@ import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 
 public class BarCodeScanner {
 	public static void main(String[] args) throws IOException {
-		
+
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
 
@@ -22,10 +22,10 @@ public class BarCodeScanner {
 		driver.get("https://barcode.tec-it.com/en");
 		String baseCodeURL = driver.findElement(By.tagName("img")).getAttribute("src");
 		System.out.println(baseCodeURL);
-		
+
 		URL url = new URL(baseCodeURL);
 		BufferedImage buffImage = ImageIO.read(url);
-		
+
 		/*
 		 * LuminanceSource lumin = new BufferedImageLuminanceSource(buffImage);
 		 * BinaryBitmap bmap = new BinaryBitmap(new HybridBinarizer(lumin)); Result
@@ -33,5 +33,4 @@ public class BarCodeScanner {
 		 * System.out.println(result.getText());
 		 */
 	}
-
 }

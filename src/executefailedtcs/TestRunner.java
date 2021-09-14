@@ -14,5 +14,4 @@ public class TestRunner {
 		runner.setTestSuites(list);
 		runner.run();
 	}
-
 }

@@ -49,7 +49,6 @@ public class windowHandleDemo {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
 				driver.findElement(By.name("q")).sendKeys("Selenium Webdriver");
-				;
 				driver.close();
 			}
 		}
