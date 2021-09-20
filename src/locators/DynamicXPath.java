@@ -78,5 +78,21 @@ public class DynamicXPath {
 		   </div>
 		   
 		 * E.g //div[contains(text(),'But After')] VS //div[contains(.,'But After')] */
+		
+		//If we want to check whether element we are identifying contains specifics tags or use below syntax
+		
+		// e.g 1. tr[4]//td[(text())]
+		//e.g 2. tr[4]//td[(@id)]
+		//Here we directly mentioned the text(), @id inside td tag, so it will return only those td
+		//which are having text or id attribute present.
+		
+		
+		//Also when we need to check specific tag, text etc is not present in webelement use not();
+		//e.g //tr[4]//td[not(text())]
+		
+		//tr[4]//td[not(@id)]
+		
+		//Also we can use contains() inside not() 
+		// a[not(contains(@id, 'xx'))
 	}
 }

@@ -9,13 +9,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandlingRadioAndChecbox {
 	/*
-	 *Selenium always try to click on element on middle of the element
-	 *Each browser has different implementation so sometimes click
-	  operation throws element  is not clickable at specific coordinate.
-	 * */
+	 * Selenium always try to click on element on middle of the element Each browser
+	 * has different implementation so sometimes click operation throws element is
+	 * not clickable at specific coordinate.
+	 */
 
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		// Code for launching the Chrome browser
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Software Setup\\Selenium - Java\\chromedriver_win32\\chromedriver.exe");
@@ -27,11 +27,10 @@ public class HandlingRadioAndChecbox {
 		if (driver.findElement(By.xpath("//span[text()='Radio Button']")).isDisplayed())
 			driver.findElement(By.xpath("//span[text()='Radio Button']")).click();
 
-		//Handling the dynamic radio button
+		// Handling the dynamic radio button
 		List<WebElement> allRadioButtons = driver.findElements(By.xpath("//input[@type='radio']/following::label"));
 
-		for (WebElement eachButton : allRadioButtons) 
-		{
+		for (WebElement eachButton : allRadioButtons) {
 			String labelOfButton = eachButton.getAttribute("for");
 			System.out.println("Label of button is " + labelOfButton);
 			if (labelOfButton.contains("yes")) {
@@ -39,19 +38,19 @@ public class HandlingRadioAndChecbox {
 				break;
 			}
 		}
-		
-		//Handling the dynamic checkbox button
+
+		// Handling the dynamic checkbox button
 		driver.findElement(By.xpath("(//div[@class='header-text'])[1]")).click();
-		
+
 		if (driver.findElement(By.xpath("//span[text()='Check Box']")).isDisplayed())
 			driver.findElement(By.xpath("//span[text()='Check Box']")).click();
 
-		//Handling the dynamic radio button
+		// Handling the dynamic radio button
 		driver.findElement(By.xpath("//button[@title='Toggle']")).click();
-		List<WebElement> allCheckBoxes = driver.findElements(By.xpath("//span[@class='rct-checkbox']/following-sibling::span[@class='rct-title']"));
+		List<WebElement> allCheckBoxes = driver
+				.findElements(By.xpath("//span[@class='rct-checkbox']/following-sibling::span[@class='rct-title']"));
 
-		for (WebElement eachCheckbox : allCheckBoxes) 
-		{
+		for (WebElement eachCheckbox : allCheckBoxes) {
 			String labelOfCheckbox = eachCheckbox.getText();
 			System.out.println("Label of checkbox is " + labelOfCheckbox);
 			if (labelOfCheckbox.equals("Documents")) {
@@ -59,7 +58,7 @@ public class HandlingRadioAndChecbox {
 				break;
 			}
 		}
-		
+
 		driver.quit();
 	}
 }
