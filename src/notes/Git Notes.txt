@@ -1,0 +1,81 @@
+GIT And GITHUB
+
+Prerequisites :
+1.To work with GIT you must have git account.
+2.Install git on your machine and set the path in env vars also.
+3.To check git install properly or not use git --version command in cmd prompt.
+
+If you have project which you need to checkin into github repo use below steps
+
+1.Initiate local git repo for that use below command
+git init
+
+2.To create connection between local and remote repo of github use below command.
+git remote add origin 'githubrepo url'
+
+3.To check the current file status
+git status
+
+It will show the file status whether it is commit or not?
+
+4.Add the directory/file in local repo first to do that use below command
+git add . or git add 'filename' (if specific file you need to add)
+
+5.To commit the code use below command
+git commit -m "add message you want to give"
+
+6.Now we need to push the code to github repo use below command
+git push origin "branch name you want to checkin"
+
+
+Done go to github repo and check code successfully checkin or not.
+
+To push the code you need to either provide username/password when it ask or you can setup the SSH KEY or Token by generating it from your
+machine and config in github settings.
+
+To pull the code we dont need any kind of auth.
+
+
+IMP
+
+When first time you want to pull any remote github repo to local we need to use clone method in following way.
+
+1.Create a folder in your machine
+2.Then open cmd prompt from there
+3.Type git clone 'githubrepoURL'
+4.If anyone has done any changes in the code and you want to fetch the changes in you local repo use 
+git pull origin 'branchname'
+
+When you want to create a feature branch from master branch and want to work on new branch use below steps.
+
+1.Go to github create new branch there.
+2.Open cmd prompt on your machine and to get the created local branch use 
+git pull origin 'createdbranchname'
+3.After that use git checkout 'createdbranchname'
+4.git branch
+
+
+1.When you are working on one branch and that branch codde is not checkin yet so you cant switch in between the brnach until and 
+unless you commit the code.
+2.When you are working on some branch you haven't take the latest code before start, and you also done the changes and now want to checkin
+code , but now you have to latest changes and then need to push your changes so either you take the backup of your local repo, take remote
+change and then merge your code
+
+or go to your project dir > open cmd > use git stash.
+
+Now pull the latest code form remote repo merge in your repo once done.
+
+Open cmd again > use git stash pop --- you will see your changes again in the repo then commit.
+
+
+
+Commands
+git status --- to track the files.
+git branch --- to see the branch you are pointing
+git checkout 'branchname' --- to switch the branch.
+git init --- to initiate local git.
+
+
+
+
+
